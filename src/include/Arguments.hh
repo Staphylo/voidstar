@@ -13,8 +13,8 @@ struct Arguments {
           range_begin(0), range_end(0),
           fullscreen(false),
           keep_chrome(false),
-          sliding_window_length(2*1024), sliding_step(1024), move_window(false),
-          spin_shape(false)
+          sliding_window_length(9 * 1024), sliding_step(1024),
+          move_window(false), spin_shape(false)
         {}
 
     std::vector<std::string> input;

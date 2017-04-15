@@ -24,7 +24,7 @@ usage(const char* prgname) {
               << " -n, --spin         Spin shape on itself" << std::endl
               << std::endl
               << " -b, --begin        begin offset for the range" << std::endl
-              << " -e, --end          end offset for the range" << std::endl
+              << " -e, --end          end offset for the range (0: till end of file)" << std::endl
               << std::endl
               << " -h, --help         this help" << std::endl
               << std::endl;
@@ -45,7 +45,7 @@ listComponents() {
 }
 
 std::shared_ptr<Arguments>
-parseArgs(int argc, char *argv[]) {
+parseArgs(int argc, char* argv[]) {
     static auto short_options = ":a:b:e:fmn_hls:w:u:x:y:";
     static const struct option long_options[] = {
         {"algorithm",  1, 0, 'a'},
