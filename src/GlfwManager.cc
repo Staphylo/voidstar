@@ -141,12 +141,12 @@ GlfwManager::run() {
 
         if (events_->keyPressed('H')) {
             loadPrevFile();
-            slide_window_rightmost();
+            slide_window_leftmost();
             slide_window();
         }
         if (events_->keyPressed('L')) {
             loadNextFile();
-            slide_window_rightmost();
+            slide_window_leftmost();
             slide_window();
         }
     }

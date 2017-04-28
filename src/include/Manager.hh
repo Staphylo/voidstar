@@ -48,7 +48,7 @@ public:
             : args_->sliding_window_length;
     }
     virtual bool slide_window() = 0;
-    void slide_window_rightmost() { sliding_window_offset_ = 0; }
+    void slide_window_leftmost() { sliding_window_offset_ = 0; }
 
     bool slide_window(VertIndices& selected, const VertIndices& indices) {
         auto left = indices.begin() + sliding_window_offset_;
