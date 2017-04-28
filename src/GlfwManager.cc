@@ -139,10 +139,16 @@ GlfwManager::run() {
         if (events_->keyPressed('F'))
             toggleFullscreen();
 
-        if (events_->keyPressed('H'))
+        if (events_->keyPressed('H')) {
             loadPrevFile();
-        if (events_->keyPressed('L'))
+            slide_window_rightmost();
+            slide_window();
+        }
+        if (events_->keyPressed('L')) {
             loadNextFile();
+            slide_window_rightmost();
+            slide_window();
+        }
     }
     glfwTerminate();
 }
