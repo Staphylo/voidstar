@@ -1,5 +1,7 @@
 # VoidStar [![TravisCI build status](https://travis-ci.org/fenollp/voidstar.svg?branch=master)](https://travis-ci.org/fenollp/voidstar/builds) [![Snap Status](https://build.snapcraft.io/badge/fenollp/voidstar.svg)](https://build.snapcraft.io/user/fenollp/voidstar)
 https://alexander.engineering/imagescatter/
+https://news.ycombinator.com/item?id=15931266
+
 Browse data using Corti's 2D projector as well as 3D variants.
 
 The actual file being represented below [is data/BigPictureBG.tga](http://www.docspal.com/viewer?id=ufbxlmfm-12197291).
