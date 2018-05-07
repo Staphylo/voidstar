@@ -15,13 +15,13 @@ public:
 protected:
     size_t
     make_vertices(GLfloat* vertices, size_t width __unused, size_t height __unused, size_t depth) {
-        const int gradation = 100;
+        const float gradation = 100;
         const float PI = 2 * std::acos(0.0f);
         const float R = static_cast<float>(depth) / 2.0f;
         const float Theta = 1.333 * PI;
         const float Phi = 2 * PI;
         const float step_angle = PI / gradation;
-        const float step_radius = R / gradation / 8;
+        const float step_radius = R / gradation / 16.f;
 
         size_t pos = 0;
         for (float r = 0.0f; r < R; r += step_radius)
